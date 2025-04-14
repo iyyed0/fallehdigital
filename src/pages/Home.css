@@ -1,0 +1,34 @@
+.home-page {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top:100px;
+}
+
+/*.hero-section {
+  background: url('farm-background.jpg') no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}*/
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-posts {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Add more styles as needed */

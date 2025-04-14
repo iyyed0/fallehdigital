@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/* Modern font imports (add to your index.html or use @import) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --primary: #4CAF50;
+  --primary-dark: #2E7D32;
+  --primary-light: #8BC34A;
+  --secondary: #607D8B;
+  --light-bg: #f5f7fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Hero section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6));
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
   color: white;
+  padding: 0 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Product cards */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(46, 125, 50, 0.1);
+}
+
+.product-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-content {
+  padding: 1.5rem;
+}
+
+/* Blog section */
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+
+
+.blog-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-content {
+  padding: 1.5rem;
+}
+
+/* Footer */
+
+.footer a {
+  color: #CFD8DC;
+}
+
+.footer a:hover {
+  color: white;
 }

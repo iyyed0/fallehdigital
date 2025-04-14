@@ -1,0 +1,4 @@
+{
+    "name":"frontend",
+    "proxy": "http://localhost:5000"
+}
